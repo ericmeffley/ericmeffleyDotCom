@@ -1,0 +1,22 @@
+//BREAKPOINT VARIABLES
+$mediumBreakPoint: 800px;
+$largeBreakPoint: 1366px;
+
+//MEDIA BREAKPOINT MIXINS
+@mixin min-width-medium{
+    @media(min-width: $mediumBreakPoint){
+        @content;
+    }    
+}
+
+@mixin max-width-medium{
+  @media(max-width: $mediumBreakPoint){
+      @content;
+  }    
+}
+
+@mixin min-width-large{
+    @media(min-width: $largeBreakPoint){
+        @content;
+    }    
+}

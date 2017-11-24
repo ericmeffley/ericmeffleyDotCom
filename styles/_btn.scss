@@ -1,0 +1,31 @@
+.btn-container{
+    display: block;
+    width: 100px;
+    height: 25px;
+    margin-left: 20%;
+}
+
+.btn{
+    display: block;
+    width: 150px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border: solid 1px #ffaa00;
+    padding: 10px;
+    border-radius: 3px;
+    line-height: 20px;
+    margin-left: 80px;
+    margin-top: -10px;
+    font-size: 1.0rem;
+
+    @include min-width-large{
+        margin-left: 120px;
+    }
+}
+.btn:hover{
+    // background-color:#acacac;
+    box-shadow: 1px 1px 4px rgb(139, 139, 139);
+    transition: all .25s ease-in-out;
+    transform: scale(1.1,1.1);
+    transition: scale() .25s ease-in-out;
+}
